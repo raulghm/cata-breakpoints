@@ -1,0 +1,42 @@
+/**
+ * Breakpoints
+ * Custom media queries
+ */
+
+/* Basic */
+
+/*:root {
+  --bp-sm: 24em;
+  --bp-md: 46.8em;
+  --bp-lg: 50em;
+  --bp-sm-2: 29.75em;
+  --bp-sm-3: 39.8em;
+  --bp-md-2: 48em;
+  --bp-lg-2: 54.5em;
+  --bp-xl: 60em;
+  --bp-xl-2: 67em;
+}*/
+
+@custom-media --sm-viewport (min-width: 24em);
+@custom-media --md-viewport (min-width: 46.8em);
+@custom-media --lg-viewport (min-width: 50em);
+
+/* Custom */
+
+/* small */
+
+@custom-media --sm-2-viewport (min-width: 29.75em);
+@custom-media --sm-3-viewport (min-width: 39.8em);
+
+/* medium */
+
+@custom-media --md-2-viewport (min-width: 48em);
+
+/* large */
+
+@custom-media --lg-2-viewport (min-width: 54.5em);
+
+/* extra large */
+
+@custom-media --xl-viewport (min-width: 60em);
+@custom-media --xl-2-viewport (min-width: 67em);
