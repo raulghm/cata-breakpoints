@@ -8,7 +8,7 @@ Read more about how to use [SUIT CSS](https://github.com/suitcss/suit/).
 
 ## Installation
 
-## NPM 
+## NPM 
 ```
 npm install cata-breakpoints
 ```
