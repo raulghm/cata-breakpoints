@@ -2,13 +2,33 @@
 
 [![Build Status](https://travis-ci.org/raulghm/cata-breakpoints.svg?branch=master)](https://travis-ci.org/raulghm/cata-breakpoints)
 
-`cata-breakpoints` 
+## Custom media queries
 
-Read more about how to use [SUIT CSS](https://github.com/suitcss/suit/).
+These are predefined values and recommendations based on this article
+http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries
+I prefer em instead of px, and I recommend applying a subset of values
+depending on the type of project and personal preferences.
+
+```css
+@custom-media --sm-viewport (min-width: 24em);
+@custom-media --md-viewport (min-width: 46.8em);
+@custom-media --lg-viewport (min-width: 50em);
+@custom-media --xl-viewport (min-width: 60em);
+```
+
+## How use
+
+```css
+@media (--sm-viewport) {
+  div {
+    width: 200px;
+  }
+}
+```
 
 ## Installation
 
-## NPM 
+## NPM
 ```
 npm install cata-breakpoints
 ```
