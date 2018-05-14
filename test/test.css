@@ -1,2 +1,54 @@
 @import "suitcss-components-test";
 @import "../index.css";
+
+/* Breakpoints test */
+
+.Test-breakpoint {
+  color: #fff;
+  display: none;
+  padding: 1em 2em;
+}
+
+.Test-breakpoint--sm {
+  background-color: red;
+}
+
+.Test-breakpoint--md {
+  background-color: blue;
+}
+
+.Test-breakpoint--lg {
+  background-color: green;
+}
+
+.Test-breakpoint--xl {
+  background-color: orange;
+}
+
+/**
+ * Apply media queries breakpoints
+ */
+
+@media (--sm-viewport) {
+  .Test-breakpoint--sm {
+    display: block;
+  }
+}
+
+@media (--md-viewport) {
+  .Test-breakpoint--md {
+    display: block;
+  }
+}
+
+@media (--lg-viewport) {
+  .Test-breakpoint--lg {
+    display: block;
+  }
+}
+
+@media (--xl-viewport) {
+  .Test-breakpoint--xl {
+    display: block;
+  }
+}
